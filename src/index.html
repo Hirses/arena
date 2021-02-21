@@ -7,6 +7,7 @@
     <title>Arena fitnes</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,28 +18,301 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class="header__logo">
-            <img src="" alt="">
-        </div>
-        <nav class="header__menu">
-            <ul>
-                <li>О клубе</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <div class="header__contact">
-            <div class="header__phone">
-                <a href=""></a>
-            </div>
-            <div class="header__call">
-
-            </div>
+        <div class="container">
+            <nav class="header__menu">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="icons/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header__items">
+                    <ul>
+                        <li class="header__item"><a href="#" class="header__link">О клубе</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Карты</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Услуги</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Команда</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:+73422922065" class="header__phone">+7 (342) 292-20-65</a>
+                    <a href="" class="header__call">Заказать обратный звонок</a>
+                </div>
+            </nav>
         </div>
     </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+        <div class="container">
+            <h1 class="main__title">Новый уровень фитнеса</h1>
+            <h2 class="main__subtitle">Для тех, кто ценит комфорт<br>и высокий уровень сервиса</h2>
+            <button class="button button_main">Присоеденится</button>
+        </div>
+    </main>
+
+
+
+    <!-- GALLERY -->
+
+    <section class="gallery">
+        <div class="gallery__corusel">
+            <div>
+                <div class="gallery__slide-1">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Рецепция</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>1700 кв. м. совремнного финтнес пространства</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-2">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Рецепция</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Продуманные планировочные решения</li>
+                                    <li>Обновленный дизайн</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-3">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Тренажерный зал</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Увеличенный в два раза</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-4">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Тренажерный зал</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Разделенный на несколько зон: кардио-зона, зона свободных весов, зона блочных<br>
+                                        и нагружаемых дисками тренажеров, зона функционального тренинга,<br>
+                                        зона единоборств и зона растяжки</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-5">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Тренажерный зал</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Новая премиум кардио-линейка тренажеров TechnoGym</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-6">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Большой зал групповых программ</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Более 25 групповых направлений: сила, функционал, танцы,<br>
+                                        единоборства, body&mind, йога, TRX, антигравити</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-7">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Малый зал групповых программ</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Новое оборудование для групповых тренировок</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-8">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Студия RealRyder</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Интерактивная сайкл-студия с датчиками пульса Polar</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-9">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Студия Pilates</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Единственный фитнес-клуб в Перми с собственным оборудованием<br>
+                                        для пилатеса - реформером Balanced Body Allegro</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-10">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Женская раздевалка</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Просторные раздевалки и вместительные шкафчики</li>
+                                    <li>Выбор любого понравившегося шкафчика</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-11">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Женская раздевалка</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Английские профессиональные фены премиум бренда Dyson имеют мощный двигатель и постоянную температуру,<br>
+                                        обеспечивающую быструю и бережную сушку волос</li>
+                                    <li>Удобные пуфики для make up’а</li>
+                                    <li>Салфетки, ватные диски и палочки</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-12">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Хаммам</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Турецкий хаммам с лучшими немецкими фильтрами</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-13">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Мужская раздевалка</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Просторные раздевалки и вместительные шкафчики</li>
+                                    <li>Выбор любого понравившегося шкафчика</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-14">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Мужская раздевалка</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Тропический душ и массажный эффект дает расслабление, бодрит и повышает тонус</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-15">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Финская сауна</div>
+                            <div class="gallery__descr">
+                                <ul>
+                                    <li>Снабжает организм важными микроэлементами</li>
+                                    <li>Приводит в тонус все мышцы тела</li>
+                                    <li>Успокаивает нервы</li>
+                                </ul>
+                            </div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="gallery__slide-16">
+                    <div class="container">
+                        <div class="gallery__info">
+                            <div class="gallery__tittle">Входная зона</div>
+                            <button class="button button_gallery">Записаться на первое занятие</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

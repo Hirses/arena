@@ -1,0 +1,167 @@
+.gallery
+    position: relative
+    min-height: 700px
+
+    &__info
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        padding: 30px
+        background-color: rgba(0,0,0,.7)
+        border-radius: 5px
+        height: fit-content
+        width: fit-content
+    &__tittle
+        font-size: 30px
+        font-weight: 700
+        color: $text-main-color
+    &__descr
+        font-size: 18px
+        font-weight: 400
+        color: $text-main-color
+        margin-top: 25px
+        ul
+            padding-left: 25px
+            margin-bottom: 0px
+    &__slide-1
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_1.jpg') center center/cover no-repeat
+    &__slide-2
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-3
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-4
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-5
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-6
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-7
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-8
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-9
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-10
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-11
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-12
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-13
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-14
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-15
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+    &__slide-16
+        display: flex
+        align-items: center
+        height: 700px
+        background: url('../img/slide_2.jpg') center center/cover no-repeat
+.slick-prev
+    position: absolute
+    z-index: 2
+    height: 50px
+    width: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    background-color: rgba(0,0,0,.6)
+    transition: 0.5s
+    top: 50%
+    transform: translateY(-50%)
+    &:hover
+        background-color: rgba(0,0,0,.7)
+    &:focus
+        outline: none
+    img
+        height: 20px
+.slick-next
+    position: absolute
+    z-index: 2
+    height: 50px
+    width: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    background-color: rgba(0,0,0,.6)
+    transition: 0.5s
+    top: 50%
+    transform: translateY(-50%)
+    right: 0
+    &:hover
+        background-color: rgba(0,0,0,.7)
+    &:focus
+        outline: none
+    img
+        height: 20px
+.slick-dots
+    font-size: 0px
+    list-style: none
+    position: absolute
+    bottom: 30px
+    right: 42%
+    display: flex
+    padding-left: 0px
+    margin-bottom: 0px
+    li
+        margin: 0 5px 0 5px
+        button
+            width: 12px
+            height: 12px
+            background-color: rgba(240,33,157,.5)
+            border-radius: 100%
+            border: none
+            &:focus
+                outline: none
+.slick-active
+    background-color: $main-color
+    border-radius: 100%
+    

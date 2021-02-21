@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hirses/practice_2.git"
+    "url": "git+https://github.com/Hirses/arena.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hirses/practice_2/issues"
+    "url": "https://github.com/Hirses/arena/issues"
   },
-  "homepage": "https://github.com/Hirses/practice_2#readme",
+  "homepage": "https://github.com/Hirses/arena#readme",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
