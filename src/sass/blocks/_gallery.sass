@@ -144,13 +144,17 @@
         height: 20px
 .slick-dots
     font-size: 0px
+    line-height: 0px
     list-style: none
     position: absolute
     bottom: 30px
-    right: 42%
+    right: 40%
     display: flex
     padding-left: 0px
     margin-bottom: 0px
+    .slick-active
+        background-color: $main-color
+        border-radius: 100%
     li
         margin: 0 5px 0 5px
         button
@@ -161,7 +165,4 @@
             border: none
             &:focus
                 outline: none
-.slick-active
-    background-color: $main-color
-    border-radius: 100%
     

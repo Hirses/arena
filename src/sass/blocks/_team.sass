@@ -1,6 +1,6 @@
 .team
     background-color: #0B0B0B
-    padding: 120px 0 120px 0
+    padding: 240px 0 120px 0
     &__title
         text-transform: uppercase
         font-size: 30px
@@ -12,3 +12,120 @@
         color: $text-main-color
         text-align: center
         margin-top: 90px
+    &__tabs
+        list-style: none
+        display: flex
+        justify-content: center
+        margin-top: 60px
+        padding-left: 0
+        margin-bottom: 0
+    &__tab
+        color: $text-main-color
+        font-size: 20px
+        font-weight: 400
+        width: 33%
+        margin: 0 50px
+        border-bottom: 4px solid #fff
+        text-align: center
+        transition: 0.5s
+        &:hover
+            color: $main-color
+            cursor: pointer
+        &_active
+            border-bottom: 4px solid #FBFF20
+    &__content
+        display: none
+        transition: 0.5s
+        &_active
+            display: block
+    &__corusel
+        position: relative
+        display: block
+        margin: 0 auto
+        margin-top: 90px
+    &__corusel-2
+        position: relative
+        display: block
+        margin: 0 auto
+        margin-top: 90px
+    &__card
+        width: 390px
+        height: 390px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        padding-bottom: 10px
+        margin: 0 30px
+        &_solo-1
+            background: url('../img/Boris_permykov.png') center center/cover no-repeat
+    &__name
+        font-size: 30px
+        color: $text-main-color
+        font-weight: 400
+    &__box
+        display: flex
+        justify-content: center
+        margin-top: 90px
+.slick-prev-2
+    position: absolute
+    z-index: 2
+    height: 50px
+    width: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    background: #0b0b0b
+    transition: 0.5s
+    top: 50%
+    transform: translateY(-50%)
+    left: -70px
+    &:hover
+        color: $main-color
+    &:focus
+        outline: none
+    img
+        height: 50px
+.slick-next-2
+    position: absolute
+    z-index: 2
+    height: 50px
+    width: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    background: #0b0b0b
+    transition: 0.5s
+    top: 50%
+    transform: translateY(-50%)
+    right: -70px
+    &:hover
+        color: $main-color
+    &:focus
+        outline: none
+    img
+        height: 50px
+.slick-dots-2
+    font-size: 0px
+    line-height: 0px
+    list-style: none
+    display: flex
+    justify-content: center
+    margin-top: 50px
+    padding-left: 0px
+    margin-bottom: 0px
+    .slick-active
+        background-color: $main-color
+        border-radius: 100%
+    li
+        margin: 0 5px 0 5px
+        button
+            width: 12px
+            height: 12px
+            background-color: rgba(240,33,157,.5)
+            border-radius: 100%
+            border: none
+            &:focus
+                outline: none
