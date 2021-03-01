@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.gallery__corusel').slick({
-        dots: true,
+        dots: false,
         fade: true,
         cssEase: 'linear',
         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left_arrow.svg"></button>',
@@ -32,7 +32,7 @@ $(document).ready(function(){
           .closest('div.container').find('div.team__content').removeClass('team__content_active').eq($(this).index()).addClass('team__content_active');
     });
     $.instagramFeed({
-        'username': 'arena_perm', //Имя пользователя
+        'username': 'hirs.ses', //Имя пользователя
         'container': "#instafeed", //Контейнер для изображений
         'display_profile': false, //Отображение профиля
         'display_biography': false, //Отображение биографии

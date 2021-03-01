@@ -1,147 +1,81 @@
 .gallery
     position: relative
-    min-height: 700px
-
+    min-height: 780px
+    padding: 120px 0
+    &:focus
+        outline: none
+    &__wraper
+        position: relative
+        height: 540px
     &__info
         display: flex
         flex-direction: column
         justify-content: flex-end
-        padding: 30px
+        padding: 55px 55px 65px 80px
         background-color: rgba(0,0,0,.7)
-        border-radius: 5px
         height: fit-content
-        width: fit-content
-    &__tittle
-        font-size: 30px
-        font-weight: 700
+        min-width: 740px
+        max-width: 1010px
+        background-color: rgba(11, 11, 11, 0.6)
+        border: 3px solid #FBFF20
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 100
+    &__title
+        font-size: 64px
+        font-weight: 600
         color: $text-main-color
+        text-transform: uppercase
     &__descr
-        font-size: 18px
+        font-size: 24px
         font-weight: 400
         color: $text-main-color
-        margin-top: 25px
-        ul
-            padding-left: 25px
-            margin-bottom: 0px
-    &__slide-1
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_1.jpg') center center/cover no-repeat
-    &__slide-2
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-3
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-4
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-5
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-6
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-7
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-8
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-9
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-10
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-11
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-12
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-13
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-14
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-15
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
-    &__slide-16
-        display: flex
-        align-items: center
-        height: 700px
-        background: url('../img/slide_2.jpg') center center/cover no-repeat
+        margin-top: 34px
+    &__img
+        width: 740px
+        height: 540px
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        img
+            height: 100%
 .slick-prev
     position: absolute
     z-index: 2
-    height: 50px
-    width: 50px
+    height: 40px
+    width: 40px
     display: flex
     justify-content: center
     align-items: center
     border: none
-    background-color: rgba(0,0,0,.6)
+    background-color: #0b0b0b
     transition: 0.5s
     top: 50%
     transform: translateY(-50%)
-    &:hover
-        background-color: rgba(0,0,0,.7)
+    left: 5%
     &:focus
         outline: none
     img
-        height: 20px
+        height: 100%
 .slick-next
     position: absolute
     z-index: 2
-    height: 50px
-    width: 50px
+    height: 40px
+    width: 40px
     display: flex
     justify-content: center
     align-items: center
     border: none
-    background-color: rgba(0,0,0,.6)
-    transition: 0.5s
+    background-color: #0b0b0b
     top: 50%
     transform: translateY(-50%)
-    right: 0
-    &:hover
-        background-color: rgba(0,0,0,.7)
+    right: 5%
     &:focus
         outline: none
     img
-        height: 20px
+        height: 100%
 .slick-dots
     font-size: 0px
     line-height: 0px
@@ -165,4 +99,8 @@
             border: none
             &:focus
                 outline: none
+
+.slik-slider, .slick-active, .slick-curent
+    &:focus
+        outline: none
     
