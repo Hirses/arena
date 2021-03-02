@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('.gallery__corusel').slick({
-        dots: false,
         fade: true,
         cssEase: 'linear',
         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left_arrow.svg"></button>',

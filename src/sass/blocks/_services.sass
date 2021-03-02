@@ -1,0 +1,61 @@
+.services
+    padding: 120px 0 120px 0
+    &__title
+        font-weight: 600
+        font-size: 56px
+        line-height: 68px
+        text-transform: uppercase
+        color: $text-main-color
+    &__content
+        margin-top: 120px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        margin-bottom: 110px
+        padding-bottom: 16px
+        position: relative
+        width: 30%
+        height: 274px
+        border: 2px solid rgba(255, 255, 255, 0.5)
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        transition: 0.5s
+        &:nth-child(7),
+        &:nth-child(8),
+        &:last-child
+            margin-bottom: 0px
+        &_purple
+            border-color: #FF0099
+        &_white
+            border-color: #FFFFFF
+        &_yellow
+            border-color: #FBFF20
+        &:hover
+            cursor: pointer
+            .services__img
+                top: -54px
+            .services__subtitle
+                color: $main-color
+    &__img
+        position: absolute
+        width: 357px
+        height: 238px
+        left: 50%
+        transform: translateX(-50%)
+        top: -43px
+        transition: 0.5s
+        img
+            width: 100% 
+    &__subtitle
+        position: absolute
+        bottom: 16px
+        left: 28px
+        font-weight: 400
+        font-size: 24px
+        line-height: 29px
+        text-transform: uppercase
+        color: $text-main-color
+        text-align: center
+        transition: 0.5s
