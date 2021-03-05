@@ -41,4 +41,9 @@ $(document).ready(function(){
         'items_per_row': 3, //Количество изображений в ряд
         'margin': 0.5 //Отступ между изображениями
     });
+    $('ul.price__tabs-first').on('click', 'li:not(.price__tabs-first_active)', function() {
+        $(this)
+          .addClass('price_tab-first_active').siblings().removeClass('price_tab-first_active')
+          .closest('div.container').find('div.price__content').removeClass('price__content_active').eq($(this).index()).addClass('price__content_active');
+    });
   });
