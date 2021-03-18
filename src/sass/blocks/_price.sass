@@ -55,9 +55,9 @@
 
 .price__content
     display: none
-    justify-content: space-between
     align-items: flex-start
-    margin-top: 200px
+    margin-top: 260px
+    position: relative
     &_active
         display: flex
 
@@ -66,8 +66,10 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    margin-right: 100px
     img
         width: 100%
+        margin-top: 100px
     .price__item
         width: 540px
 
@@ -133,6 +135,49 @@
 
 .price__img
     .price__item
+        position: relative
+        top: 70px
         &:before
             content: ""
             background-color: #0b0b0b
+
+.price__subtabs, .price__subtabs-4, .price__subtabs-5
+    list-style: none
+    padding-left: 0
+    display: flex
+    margin: 50px 0
+    border-bottom: 2px solid rgba(#fff, .3 )
+    position: absolute
+    top: -50px
+
+.price__subtabs-2, .price__subtabs-3, .price__subtabs-4, .price__subtabs-5
+    list-style: none
+    padding-left: 0
+    display: flex
+    margin: 50px 0
+    position: absolute
+    top: -50px
+
+
+.price__subtab
+    color: $text-main-color
+    font-size: 24px
+    font-weight: 400
+    transition: 0.3s
+    cursor: pointer
+    &:first-child
+        margin-right: 30px
+    &_active
+        font-weight: 700
+        border-bottom: 4px solid #FBFF20
+    &:hover
+        font-weight: 700
+        border-bottom: 4px solid #FBFF20
+
+.price__subcontent, .price__subcontent-2, .price__subcontent-3, .price__subcontent-4, .price__subcontent-5
+    display: none
+    justify-content: space-between
+    align-items: flex-start
+    &_active
+        display: flex
+
